@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/fireqhce/public_html
+    - /bin/rsync -av --exclude='downloads' ./ $DEPLOYPATH
