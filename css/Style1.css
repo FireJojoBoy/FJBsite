@@ -1,0 +1,173 @@
+/* Font Faces */
+@font-face {
+    font-family: Roboto;
+    src: url('../Fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: Metshige;
+    src: url("../Fonts/METSN___.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ComicSans;
+    src: url("../Fonts/comic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+#day-of-week-message {
+    color: yellow;
+    font-family: ComicSans;
+    src: url("../Fonts/comic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+}
+/* Global Styles */
+* {
+    cursor: url('../img/MainStuff/cursor.png'), auto;
+}
+body{
+    background-image: url(../img/MainStuff/mainBG.png);
+    background-repeat: repeat;
+    background-size: 128px 128px;
+    background-color: #140092;
+    text-align: center;
+    color: white;
+    font-family: "Comic Sans MS";
+    margin: 0;
+    cursor:url(../img/MainStuff/cursor.png), auto;
+}
+footer{
+   /* Well, might add a footer in the future, who knows? */
+}
+/* Typography */
+h1 {
+    color: yellow;
+    font-family: Metshige;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 5px;
+}
+
+p {
+    color: yellow;
+    font-family: ComicSans;
+    src: url("../Fonts/comic.ttf") format("truetype");
+    font-size: 25px;
+    font-style: normal;
+    word-spacing: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* Links */
+a {
+    color: red; /* Set the desired color */
+}
+a:hover{
+    cursor:url(../img/MainStuff/cursorPoint.png), auto;
+}
+a:visited {
+    color: red; /* Set the color for visited links */
+}
+
+a:hover {
+    color: yellow; /* Set the color for hovered links */
+}
+table {
+    width: 60%; /* Makes the table smaller (adjust percentage as needed) */
+    margin: auto; /* Centers the table */
+    border: 2px solid #448EDD; /* Yellow border around the table */
+    border-collapse: collapse; /* Ensures no gaps between borders */
+    background-image: url(../Music/CardBG.png);
+    background-color: #0E1022;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #27368E; /* Yellow border between cells */
+    font-size: 20px;
+    font-family: ComicSans;
+    src: url("../Fonts/comic.ttf") format("truetype");
+}
+th img, td img {
+    width: 88px; /* Adjust the GIF/image width to be smaller */
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 90%; /* Makes the link space longer */
+}
+th:nth-child(1), td:nth-child(1) {
+    width: 10%; /* Makes the GIF space slimmer */
+}
+/* Images and Pixel Art */
+.pixel-art {
+    image-rendering: pixelated;
+}
+.PeronalButtons{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+    grid-gap: 0;
+    width: 800px;
+    margin: 0 auto;
+}
+.PeronalButtons img{
+    display: block;
+    width: 88px;
+    height: 31px;
+}
+.PeronalButtons p {
+    color: yellow;
+    font-family: ComicSans;
+    src: url("../Fonts/comic.ttf") format("truetype");
+    font-size: 25px;
+    font-style: normal;
+    word-spacing: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container-Home {
+    display: flex;
+    justify-content: center;
+}
+.image-container-More{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.image-container-About {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image-container-About-Kitty{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+@media only screen and (max-width: 1000px) {
+    .image-container-About {
+        flex-direction: column;
+    }
+}
+.ArtblogSelect{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #27368E;
+}

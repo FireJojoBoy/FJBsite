@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FJBsite</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="The FireJojoboy Website! Stay for the vibes!">
+    <meta name="keywords" content="FireJojoBoy, FJB, FJBsite">
+    <meta name="author" content="FireJojoBoy">
+    <link rel="stylesheet" type="text/css" href="css/Style1.css">
+    <link rel="stylesheet" type="text/css" href="css/MainBtns.css">
+    <link rel="stylesheet" type="text/css" href="css/Emojis.css">
+    <link rel="icon" type="image/png" href="img/MainStuff/Icon_thicker.png"/>
+    <link rel="stylesheet" type="text/css" href="css/musicStyle.css">
+</head>
+<body onload="showSection('homeSection', 'btn_main_1')">
+    <main>
+        <img src="img/MainStuff/Header.png" width="893" height="223" />
+        <div class="preload-container" style="display: none;">
+            <!-- Hidden container for preloading images -->
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_2.png" alt="Preload Image 1">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_2_h.png" alt="Preload Image 2">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_2_a.png" alt="Preload Image 3">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_1.png" alt="Preload Image 4">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_1_h.png" alt="Preload Image 5">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_1_a.png" alt="Preload Image 6">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_3.png" alt="Preload Image 7">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_3_h.png" alt="Preload Image 8">
+            <img src="img/MainStuff/MainBtnSprites/Btn_1_3_a.png" alt="Preload Image 9">
+        </div>
+        <div id="popup">
+            <div class="popup-content">
+                <button class="close-button" onclick="closePopup()">X</button>
+                <div class="popup-header">
+                    <div class="release-name" id="popupTitle"></div> <!-- Use existing style -->
+                    <img src="" alt="Cover" class="popup-cover" id="popupCover"> <!-- Cover Image -->
+                </div>
+                <div class="popup-buttons" id="popupContent"></div> <!-- Streaming Links -->
+            </div>
+        </div>                              
+        <div id="mainContent">
+            <div class="button-container">
+                <!-- Buttons above the content -->
+                <button class="button1 button1Left" id="btn_main_1">Home</button>
+                <button class="button1" id="btn_main_2">About</button>
+                <button class="button1" id="btn_main_3">Music</button>
+                <button class="button1" id="btn_main_4">Artblog</button>
+                <button class="button1 button1Right" id="btn_main_5">More</button>
+            </div>
+            <div id="homeSection">
+                <!-- Content specific to the Home section -->
+                <div class="content">
+                    <img class="pixel-art" src="img/Home/hOnl.gif" width="704" height="76"/>
+                    <p>I'm FireJojoBoy and this is my yiffin' awesome Website! <span class="emoji emoji-happi"></span></p>
+                    <p>If you want, you can <a href="https://discord.gg/sCScb65" target="_blank">join my discord server</a> and come talk!</p>
+                    <div class="image-container-Home">
+                        <img src="img/Home/FJBcat_cheer_256.gif" width="280" height="280"/>
+                        <img class="pixel-art" src="img/Home/FJBcatNyan.png" width="476" height="280"/>
+                        <img class="pixel-art" src="img/Home/FJBcatLick.png" width="280" height="280"/>
+                    </div>
+                    <div id="day-of-week-message"></div>
+                    <script src="js/HomeScript.js"></script>
+                </div>
+            </div>
+            <div id="aboutSection" style="display: none;">
+                <!-- Content specific to the About section -->
+                <div class="content">
+                    <div class="image-container-About">
+                        <img src="img/About/whoRu.gif" width="512" height="384" />
+                        <p>Hey, I'm FireJojoBoy, your's truly! <br>
+                        Born June 18th 2005 in Germany <br>
+                        (the year Justice dropped Waters of Nazareth).<br><br>
+                        I'm a very creative person, I'd say; <br>
+                        games, art, music, videos, 3D modelling and so on...<br>
+                        Just doing a little bit of everything in my freetime!<br>
+                        I guess making Websites is also part of my doing now, damn.
+                        </p>
+                    </div>
+                    <img src="img/About/What-do-you-do.gif" width="600" height="100" />
+                    <p>I am currently in an apprenticeship for Media Design!<br>
+						(As you could probably tell from looking at this well thought out website)<p>
+                    <img src="img/About/Radical.gif" width="360" height="100" />
+                    <p>You can check out my <a href="https://linktr.ee/FireJojoBoy" target="_blank">Linktree</a> if you care about my other social media.<br>
+						Anyway, here are some more things about me:</p>
+                    <div class="image-container-About-Kitty">
+                        <img src="img/About/FJBcat_512.png" width="350" height="350" />
+                        <img src="img/About/Me2_512.jpg" width="350" height="350" />
+                    </div>
+                    <p>This red kitty here is FJBcat, my mascot/fursona!<br>
+						They basically mostly represent my own persona!<br><br>
+						You can probably tell that I came up with the name "FJBcat" back when I was making games because it sounds like a goddamn C# variable</p>
+                    <img src="img/About/NoWay.gif" width="600" height="300" />
+                    <p>I came up with the name "FireJojoBoy" in 4th grade,<br>I used to have this silly nickname "jojo"</p>
+                    <div class="image-container-Main">
+                        <img src="img/MainStuff/JojoYoyo.png" width="350" height="350" />
+                        <p>That's also why my logo is supposed to resemble a yoyo!</p>
+                        <p>(In germany we actually speel it with a J so it made sense at the time)<span class="emoji emoji-sus"></span></p>
+                    </div>
+                    <img src="img/About/Begone.gif" width="800" height="300"/>
+                </div>
+                <p>So hey, did you know that...<br></p>
+                <img src="img/About/Enby.png" width="600" height="150"/>
+                <p>Ladies, Enbies and Gentlemen: I'm any/all, bitch!<br>
+					Is profanity ok? Do Sites have age ratings?<br>
+				</p>
+            </div>
+            <div id="musicSection" style="display: none;">
+                <!-- Content specific to the Music section -->
+                <div class="content">
+                    <p>Also listed on <a href="https://rateyourmusic.com/artist/firejojoboy" target="_blank">Rateyourmusc</a></p>
+                    <img src="img/Music/MyDiscography.gif" width="775" height="75"/>
+                    <p>
+                        If you want specific commentary on my music, head to the
+                        <a href="javascript:void(0);" id="artblog-link" onclick="document.getElementById('btn_main_4').click();">Artblog!</a>
+                    </p>
+                    <p>Interested in sampling, remixing or DJing? <a href="./stems">Download stems</a> or <a href="./blog/songlist">check the songlist!</a></p>
+                    <br>
+                    <!-- Filter Buttons -->
+                    <div class="filter-buttons">
+                        <button class="filter-button active" data-category="all">All</button>
+                        <button class="filter-button" data-category="singles">Singles</button>
+                        <button class="filter-button" data-category="eps">EPs</button>
+                        <button class="filter-button" data-category="albums">Albums</button>
+                        <button class="filter-button" data-category="various">Various</button>
+                        <button class="filter-button" data-category="important">Important</button>
+                    </div>
+                    <!-- Music Releases -->
+                    <div class="releases-container" id="releasesContainer">
+                        <!-- Releases will be injected here by JavaScript -->
+                    </div>                        
+                </div>
+                <!-- Link to the JavaScript file -->
+                <script src="js/music-section.js"></script>
+            </div>
+            <div id="artblogSection" style="display: none;">
+                <!-- Content specific to the Art Blog section -->
+                <div class="content">
+                    <div class="ArtblogSelect">
+                        <h2><span id="rainbow">My (Art)blog!</span></h2>
+                        <h2>Music</h2>
+                        <p><a href="./blog/gear">My music gear</a></p>
+                        <p><a href="./blog/songlist">Songlist for remixing / DJing</a></p>
+                        <h2>Misc</h2>
+                        <p><a href="./blog/plans">Plans for this website</a></p>
+                        <p>(more entries to come, I'm a busy kitty)</p>
+                    </div>
+                    <img src="img/MainStuff/YVPE.gif">
+                </div>
+            </div>
+            <div id="moreSection" style="display: none;">
+                <!-- Content specific to the "more" section -->
+                <div class="content">
+                    <p>Oh, so you want "more" of me, huh?</p>
+                    <p>Well, I'm not quite sure what to do with this section yet,<br>so hit me up on discord if you want!</p>
+                    <p>Have some emojis I've added to this Site: 
+                        <span class="emoji emoji-happi"></span> 
+                        <span class="emoji emoji-sus"></span> 
+                        <span class="emoji emoji-oops"></span> 
+                        <span class="emoji emoji-wink"></span> 
+                        <span class="emoji emoji-blush"></span> 
+                        <span class="emoji emoji-weed"></span>
+                    </p>
+                    <br>
+                    <div class="image-container-More">
+                        <p>Site Credits:<br>
+                        Mouse pointing sprite refined by Comerade Cat!<br>
+                        Mouse sparkle & Rainbow text effects by <a href="https://www.mf2fm.com/rv/dhtmltinkerbell.php" target="_blank">mf2fm web-design</a><br>
+                        This Website does NOT use cookies!
+                        </p>
+                    </div>
+                    <br>
+                    <p>This is my button collection:</p>
+                </div>
+                <div class="PeronalButtons">
+                    <img src="img/Buttons/0a7b4434.gif"/><img src="img/Buttons/72.gif"/><img src="img/Buttons/88x31.gif"/><img src="img/Buttons/ab-trn.png"/>
+                    <img src="img/Buttons/badapple.gif"/><img src="img/Buttons/bff.gif"/><img src="img/Buttons/brat.gif"/><img src="img/Buttons/button145.png"/><img src="img/Buttons/button169.png"/>
+                    <img src="img/Buttons/codedwithpride.gif"/><img src="img/Buttons/dvno.gif"/><img src="img/Buttons/freeware.gif"/><img src="img/Buttons/fuck-nfts.gif"/>
+                    <img src="img/Buttons/gmail.gif"/><img src="img/Buttons/hatemac.jpg"/><img src="img/Buttons/hentaifree.gif"/><img src="img/Buttons/jksmall2.gif"/>
+                    <img src="img/Buttons/kuromi virus.gif"/><img src="img/Buttons/music.gif"/><img src="img/Buttons/no biney.png"/>
+                    <img src="img/Buttons/noweb32.gif"/><img src="img/Buttons/nyancat.gif"/><img src="img/Buttons/odditycommodity.gif"/>
+                    <img src="img/Buttons/pc.gif"/><img src="img/Buttons/PISS.gif"/><img src="img/Buttons/rainbowFlag.png"/><img src="img/Buttons/selfpride1-3.gif"/>
+                    <img src="img/Buttons/sixeyes-mspaint2.png"/><img src="img/Buttons/sixeyes-yeah.png"/><img src="img/Buttons/smileys.gif"/><img src="img/Buttons/ublock-now.png">
+                    <img src="img/Buttons/wii.gif"/><img src="img/Buttons/www.gif"/><img src="img/Buttons/y2k.gif"/>
+                </div>
+                <div class="content">
+                    <p> Press 
+                        <a onclick="toggleContainer()">&gt;HERE&lt;</a>
+                        for the credits of this button collection!
+                    </p>
+                    <p style="font-size: 16px;">(incomplete cuz' it's hard to find sources for some of these)</p>
+                    <div id="btnCredits" style="display: none;">
+                        <table>
+                            <tr>
+                                <th><img src="img/Buttons/0a7b4434.gif"/></th>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/72.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/88x31.gif"/></td>
+                                <th><a href="https://theglittersalamango.neocities.org/" target="_blank">https://theglittersalamango.neocities.org/</a> (Site seems to be down)</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/ab-trn.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/badapple.gif"/></td>
+                                <th><a href="https://groonklie.com/badgelist" target="_blank">https://groonklie.com/badgelist</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/bff.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/brat.gif"/></td>
+                                <th><a href="https://plasticdino.neocities.org/graphics" target="_blank">https://plasticdino.neocities.org/graphics</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/button145.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/button169.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/codedwithpride.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/dvno.gif"/></td>
+                                <th><a href="https://plasticdino.neocities.org/graphics" target="_blank">https://plasticdino.neocities.org/graphics</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/freeware.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/fuck-nfts.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/gmail.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/hatemac.jpg"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/hentaifree.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/jksmall2.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/kuromi virus.gif"/></td>
+                                <th><a href="https://zanarkand.neocities.org/" target="_blank">https://zanarkand.neocities.org/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/music.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/no biney.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/noweb32.gif"/></td>
+                                <th><a href="https://yesterweb.org/no-to-web3/" target="_blank">https://yesterweb.org/no-to-web3/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/nyancat.gif"/></td>
+                                <th><a href="https://zanarkand.neocities.org/" target="_blank">https://zanarkand.neocities.org/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/odditycommodity.gif"/></td>
+                                <th>Pretty sure it's from <a href="https://odditycommoddity.neocities.org/" target="_blank">https://odditycommoddity.neocities.org/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/pc.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/PISS.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/rainbowFlag.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/selfpride1-3.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/sixeyes-mspaint2.png"/></td>
+                                <th><a href="https://sixey.es/8831/" target="_blank">https://sixey.es/8831/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/sixeyes-yeah.png"/></td>
+                                <th><a href="https://sixey.es/8831/" target="_blank">https://sixey.es/8831/</a></th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/smileys.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/ublock-now.png"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/wii.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/www.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Buttons/y2k.gif"/></td>
+                                <th>Source currently unkown for me</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <script>
+                        function toggleContainer() {
+                            var container = document.getElementById('btnCredits');
+                            // Toggle visibility
+                            if (container.style.display === 'none') {
+                                container.style.display = 'block';
+                            } else {
+                                container.style.display = 'none';
+                            }
+                        }
+                    </script>
+                    <br>
+                    <p>Here are some buttons I've made myself:</p>
+                </div>
+                <div class="PeronalButtons">
+                    <img src="img/Buttons/Own/AllWet.gif"/><img src="img/Buttons/Own/Justice.gif"/><img src="img/Buttons/Own/EdRec.gif"/><img src="img/Buttons/Own/Unity.gif"/>
+                    <img src="img/Buttons/Own/Audacity.png"/><img src="img/Buttons/Own/htmlHeart.gif"/><img src="img/Buttons/Own/Weed.gif"/><img src="img/Buttons/Own/MLG.gif"/>
+                </div>
+                <div class="content">
+                    <p>Feel free to use them on your own Website!</p>
+                    <p>(No credit needed but appreciated ^^)</p><br>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/MouseSparkle.js" type="text/javascript"></script>
+<script src="js/RainbowText.js" type="text/javascript"></script>
+</html>

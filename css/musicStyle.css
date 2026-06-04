@@ -1,0 +1,240 @@
+/* Music Section */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.filter-button {
+    background-color: transparent;
+    color: yellow;
+    padding: 20px 40px;
+    margin: -2px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Roboto;
+    outline: 4px solid red;
+    outline-offset: -2px;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s ease;
+}
+.filter-button:hover {
+    background-color: #666;
+    cursor:url(../img/MainStuff/cursorPoint.png), auto;
+}
+.filter-button.active {
+    background-color: red;
+    color: yellow;
+    outline-color: yellow;
+    z-index: 10;
+    font-size: 30px;
+}
+.releases-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.release-item {
+    display: flex;
+    width: 640px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url(../img/Music/CardBG.png);
+    background-repeat: repeat;
+    background-size: 32px 32px;
+    background-color: #0E1022;
+}
+.cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.release-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 210px);
+    align-items: center;
+    text-align: center;
+}
+.release-name {
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: Roboto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    color: yellow;
+}
+.release-description {
+    font-family: Roboto;
+    font-size: 14px;
+    margin: 5px 0;
+    word-spacing: 5px;
+    color: white;
+}
+.release-date {
+    font-size: 12px;
+    color: #ccc;
+    margin: 5px 0;
+    font-family: Roboto;
+}
+
+
+/* STREAMING LINKS */
+
+/* Lock scroll when popup is open */
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Style to blur main content when popup is active */
+#popup.active ~ #mainContent {
+    filter: blur(8px);
+    pointer-events: none; /* Disable clicks on background */
+    transition: filter 0.3s ease;
+}
+
+#popup {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-sizing: border-box; 
+    background-color: rgba(14, 16, 34, 1);
+    background-image: url(../img/Music/CardBG.png);
+    background-repeat: repeat; 
+    background-size: 32px 32px; 
+    padding: 20px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+    display: none; 
+}
+
+.popup-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.popup-header {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    width: 50%; /* Take up half of the popup width */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+.popup-buttons {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+    width: 50%; /* Take up half of the popup width */
+    padding: 10px; /* Optional padding for spacing */
+}
+
+.popup-cover {
+    width: 200px; /* Adjust as necessary for the cover size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space between title and cover */
+    border-radius: 10px;
+}
+
+.popup-title {
+    font-size: 20px; /* Adjust font size as necessary */
+    color: #fff; /* Change text color for visibility */
+    flex: 1; /* Allow the title to take available space */
+}
+
+#popupContent {
+    display: flex; /* Arrange buttons in a row */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: flex-end; /* Align buttons to the right */
+}
+
+/* Optional close button styling */
+.close-button {
+    position: absolute; /* Position it relative to the popup */
+    top: 10px; /* Adjust positioning */
+    right: 10px; /* Adjust positioning */
+    background: transparent; /* Transparent background */
+    border: none; /* No border */
+    cursor: url(../img/MainStuff/cursorPoint.png), auto;
+    font-size: 25px; /* Font size for close button */
+    color: yellow; /* Color of the close button */
+    transition: transform 0.3s ease;
+}
+.close-button:hover{
+    transform: scale(1.4); /* Increase size on hover */
+    cursor: url(../img/MainStuff/cursorPoint.png), auto;
+    color: red;
+}
+
+.streaming-button {
+    display: inline-block; /* Allow inline behavior */
+    margin: 5px; /* Margin around buttons */
+    width: 256px; /* Set explicit width */
+    height: 64px; /* Set explicit height */
+    position: relative; /* Allows for absolute positioning of inner elements if needed */
+    overflow: hidden; /* Prevents overflow */
+    cursor: pointer; /* Change to pointer cursor */
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    transform: scale(0.9);
+}
+.streaming-icon {
+    width: 100%; /* Fill the button area */
+    height: 100%; /* Fill the button height */
+    object-fit: cover; /* Maintain aspect ratio and cover area */
+    display: block; /* Prevents extra space */
+    pointer-events: none; /* Prevent image from blocking hover */
+}
+.streaming-button:hover {
+    transform: scale(1);
+    cursor: url(../img/MainStuff/cursorPoint.png), auto;
+}
+
+.listen-button {
+    margin: 10px;
+    width: 64px;
+    height: 32px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    transform: scale(1);
+    border: none;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    text-align: center; /* Center the text */
+    background-color: #0087FF;
+    background-image: url(../img/Music/links/listenbtnB.png);
+    font-family: Roboto;
+    font-size: 18px;
+    color: black;
+}
+/* Hover effect for normal buttons */
+.listen-button:hover:not(:disabled) {
+    transform: scale(1.2);
+    cursor: url(../img/MainStuff/cursorPoint.png), auto;
+}
+
+/* Disable hover effect for disabled buttons */
+.listen-button:disabled {
+    background-image: url(../img/Music/links/listenbtnG.png); /* Change to greyed-out sprite */
+    cursor: not-allowed; /* Change cursor style for disabled button */
+}
+.listen-button.disabled {
+    background-image: url(../img/Music/links/listenbtnG.png); /* Use the disabled sprite */
+    cursor: not-allowed; /* Change cursor to indicate it's disabled */
+    opacity: 0.6; /* Optional: dim the button to show it's inactive */
+}

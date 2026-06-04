@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FJBsite - The Stems!</title>
+    <meta name="description" content="Download the Stems from FireJojoBoy music!">
+    <meta name="keywords" content="FireJojoBoy, FJB, FJBsite, Stems, Stem page, Album Stems">
+    <meta name="author" content="FireJojoBoy">
+    <link rel="stylesheet" type="text/css" href="css/Style1.css">
+    <link rel="stylesheet" type="text/css" href="css/MainBtns.css">
+    <link rel="stylesheet" type="text/css" href="css/Emojis.css">
+    <link rel="stylesheet" type="text/css" href="css/StemStyle.css">
+    <link rel="icon" type="image/png" href="img/MainStuff/Icon_thicker.png"/>
+</head>
+    <img src="img/MainStuff/Header.png" width="893" height="223" />
+    <div id="mainSection">
+        <img id="headergif" src="img/Stems/MyStems.gif" alt="My Stems!">
+        <div class="content">
+            <div class="StemBtnContainer">
+                <a class="StemBtn" href="downloads/stems/Astro Belt Stems.zip" download>
+                    <img class="StemCover" src="img/Music/AstroBelt.jpg">
+                    <span>Astro Belt</span>
+                </a>                
+                <a class="StemBtn" href="downloads/stems/OLED Stems.zip" download>
+                    <img class="StemCover" src="img/Music/OLED.jpg">
+                    <span>OLED</span>
+                </a>
+                <a class="StemBtn" href="downloads/stems/Abort Stems.zip" download>
+                    <img class="StemCover" src="img/Music/Abort.jpg">
+                    <span>Abort</span>
+                </a>
+				<a class="StemBtn" href="downloads/stems/A Fine Selection Of Some Fist Pumping EDM Stems.zip" download>
+                    <img class="StemCover" src="img/Music/FistPumping.jpg">
+                    <span>A Fine Selection of Some Fist Pumping EDM</span>
+                </a>
+            </div>
+            <p>Download the stems from the birth-trilogy or AFSOSFEDM!<br>
+                Don't worry, I'll also add stems from my other music eventually!<span class="emoji emoji-wink"></span><br>
+				Check out <a href="blog/songlist">the songlist</a> for the Key and BPM of every major track I made!</p>
+            <button class="button1 button1Seperate" id="btn_home">Home</button>
+        </div>
+        <script src="HomeScript.js"></script>
+    </div>
+    <div class="preload-container" style="display: none;">
+        <!-- Hidden container for preloading images -->
+        <img src="img/MainStuff/MainBtnSprites/Btn_1.png" alt="Preload Image 1">
+        <img src="img/MainStuff/MainBtnSprites/Btn_1_h.png" alt="Preload Image 2">
+        <img src="img/MainStuff/MainBtnSprites/Btn_1_a.png" alt="Preload Image 3">
+        <img src="../img/Stems/StemCard_ON.png" alt="Preload Image 4">
+    </div>
+    <script>
+    // Add event listeners to buttons
+    document.getElementById("btn_home").addEventListener("click", () => showSection());
+
+    function showSection(sectionId, buttonId) {
+        window.location.href = '/'; 
+    }
+    </script>
+</body>
+<script src="js/MouseSparkle.js" type="text/javascript"></script>
+</html>

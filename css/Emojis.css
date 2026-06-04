@@ -1,0 +1,18 @@
+/* Emoji */
+.emoji {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    background-image: url('../img/MainStuff/EmojiSet1.png');
+    background-size: 192px 128px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    overflow: hidden;
+    transform: scale(0.8);
+}
+.emoji-happi {background-position: 0 0;}
+.emoji-sus {background-position: -64px 0;}
+.emoji-oops {background-position: -128px 0;}
+.emoji-wink {background-position: 0 -64px;}
+.emoji-blush {background-position: -64px -64px;}
+.emoji-weed {background-position: -128px -64px;}

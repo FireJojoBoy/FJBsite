@@ -1,0 +1,72 @@
+/* Main Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjust as needed */
+    padding: 10px;
+}
+.button1 {
+    width: 256px;
+    height: 128px;
+    background-color: transparent;
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: yellow;
+    padding: 20px 10px;
+    border-width: 0;
+    border-color: yellow;
+    cursor: pointer;
+    margin: 0;
+    font-family: Metshige;
+    font-size: 35px;
+    padding-top: 10px;
+    display: inline-table;
+    outline: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.button1:hover {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_2_h.png);
+    padding-top: 15px;
+    cursor:url(../img/MainStuff/cursorPoint.png), auto;
+}
+.button1:active {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_2_a.png);
+    padding-top: 20px;
+}
+/* Main Active Button */
+.active-button {
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    font-size: 40px;
+}
+/* Main Button Variants */
+.button1Left {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_1.png);
+}
+
+.button1Left:hover {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_1_h.png);
+}
+.button1Left:active {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_1_a.png);
+}
+.button1Right {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_3.png);
+}
+.button1Right:hover {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_3_h.png);
+}
+.button1Right:active {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_3_a.png);
+}
+.button1Seperate {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1.png);
+}
+.button1Seperate:hover {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_h.png);
+}
+.button1Seperate:active {
+    background-image: url(../img/MainStuff/MainBtnSprites/Btn_1_a.png);
+}

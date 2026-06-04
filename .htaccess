@@ -1,0 +1,7 @@
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteRule ^stems$ /stems.html [L]
+RewriteRule ^EDM2$ /EDM2.html [L]
+RewriteRule ^blog/gear$ /blog/gear.html [L]
+RewriteRule ^blog/plans$ /blog/plans.html [L]
+RewriteRule ^blog/songlist$ /blog/songlist.html [L]

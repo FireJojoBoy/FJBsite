@@ -1,0 +1,27 @@
+.gridded{
+    margin: auto;
+    max-width: 1200px;
+    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.HeaderLeft{
+    grid-column: 1 / 3;
+}
+.textLeft{
+    grid-column: 1 / 3;
+}
+.HeaderRight{
+    grid-column: 2 / 4;
+}
+.textRight{
+    grid-column: 2 / 4;
+}
+.Seperator1{
+    width: 95%;
+    grid-column: 1 / -1;
+    border: 1px dashed red;
+}
+.imgBlog1{
+    box-shadow: 6px 6px yellow;
+}
