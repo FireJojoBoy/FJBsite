@@ -1,0 +1,228 @@
+@font-face{
+	font-family: "Roman_SD";
+	src: url("../../Fonts/blog/AlbumArt/Roman_SD.ttf") format("TrueType");
+}
+@font-face{
+	font-family: "Arkhip_font";
+	src: url("../../Fonts/blog/AlbumArt/Arkhip_font.otf") format("OpenType");
+}
+body{
+	background-image: url("../../img/Blog/AlbumArt/skulls.jpg");
+	justify-content: center;
+	text-align: center;
+}
+h1{
+	font-family: "Roman_SD";
+	font-weight: 700;
+	letter-spacing: 0.1rem;
+	font-size: 3rem;
+	line-height: 3.5rem;
+}
+h2{
+	font-family: "Arkhip_font";
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	font-size: 2rem;
+}
+p{
+	font-family: "Arkhip_font";
+	font-size: 1rem;
+}
+hr{
+	border: 0.1rem solid black;
+}
+.galleryContainer{
+	background-image: url("../../img/Blog/AlbumArt/035C.jpg");
+	max-width: 1000px;
+	padding: 10px;
+	margin-inline: auto;
+	border-radius: 2rem;
+	corner-shape: scoop;
+	filter: drop-shadow(0rem 0rem 5rem rgba(0, 0, 0, 1));
+}
+.albumSection{
+	/*background-color: #9980FF;*/
+	justify-content: center;
+	text-align: center;
+}
+.CoverGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    gap: 12px;
+    justify-content: center;
+}
+
+.AlbumArt{
+	max-height: 100%;
+	max-width: 100%;
+	overflow: hidden;
+	transition: transform 0.2s cubic-bezier(0, 0, 0.1, 1);
+	display: inline-block;
+	border-radius: 3px;
+	filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5));
+}
+.AlbumArt:hover{
+	transform: scale(1.1);
+}
+.AlbumArt:active{
+	transform: scale(0.9);
+}
+body:has(.AlbumArt:hover){
+	background-image: url("../../img/Blog/AlbumArt/skulls_2.jpg");
+}
+/* CODE STOLEN FROM https://www.w3schools.com/css/css3_images_modal.asp */
+
+/* The Modal (background) */
+.modal{
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  align-items: center;
+  justify-content: center;
+}
+.modal.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+/* modal bodyyy */
+.modal-body{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  position: relative;
+}
+/* Modal content (image) */
+.modal-content{
+  max-width: 60vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  animation: zoomFadeIn 0.5s forwards;
+}
+.modal-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.modal.show .modal-bg {
+  opacity: 1;
+}
+/* Text styling */
+.modal-text{
+  color: white;
+  max-width: 40wv;
+  background-color: red; /* YOOOOOOOOOOOOOOOOOOO THIS IS TEMPORARY BTW! */
+  animation: zoomFadeIn 0.5s forwards;
+}
+
+.caption{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.modal-subtext{
+  font-size: 16px;
+  opacity: 0.85;
+}
+@keyframes zoomFadeIn{
+	from{
+		transform: scale(0.6);
+		opacity: 0;
+	}to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes FadeIn{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
+}
+
+/* Close button */
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: zoomFadeIn 0.5s forwards;
+}
+.close:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-item {
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+	.modal-body {
+		flex-direction: column;
+		text-align: center;
+	}
+	.modal-text {
+		max-width: 100%;
+	}
+	.modal-content {
+		max-width: 80vw;
+	}
+}
+
+/* ARROWS */
+
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transition: transform 0.2s;
+}
+
+.modal-arrow:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.modal-arrow.left {
+  left: 10px;
+}
+
+.modal-arrow.right {
+  right: 10px;
+}

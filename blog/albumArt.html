@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="../css/blog/albumArtStyle.css">
+	  <link rel="preload" as="image" href="../img/Blog/AlbumArt/skulls_2.jpg">
+	  <title>Cover Gallery!</title>
+	</head>
+	<body>
+		<div class="galleryContainer">
+			<h1>Album Art Gallery!</h1>
+			<p>Wow! Artwork!<br>
+			Background tiles used for this page can be found <a href="https://bettysgraphics.neocities.org/backgrounds" target="_blank">here</a><br>
+			(slightly modified lol)
+			</p>
+			<div class="albumSection">
+				<hr>
+				<h2>Test-Album: & Of an Era</h2>
+					<div class="CoverGrid">
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Back.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Photo_1.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Sleeve.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+						>
+					</div>
+				<p>Here is some text of me explaining some album art from the album these visuals are from</p>
+			</div>
+			<div class="albumSection">
+				<hr>
+				<h2>Test-Album 2: A Fine Selection Of Some Fist Pumping EDM</h2>
+					<div class="CoverGrid">
+						<img class="AlbumArt" 
+							src="../img/Blog/AlbumArt/Artwork_TestAlbum_Sleeve.png" 
+							title=">>>> EPIC PLACEHOLDER TEXT <<<<"
+							data-info="Placeholder rambling!"
+							onclick="openModal(this)"
+						>
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Back.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Photo_1.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Sleeve.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Photo_1.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Photo_1.png">
+						<img class="AlbumArt" src="../img/Blog/AlbumArt/Artwork_TestAlbum_Front.png">
+					</div>
+				<p>Here is some text of me explaining some album art from the album these visuals are from</p>
+			</div>
+		</div>
+		<div id="imageModal" class="modal">
+			<div class="modal-bg"></div>
+			<span class="close" onmousedown="closeModal()">&times;</span>
+			<!-- Left/Right arrows -->
+			<span class="modal-arrow left" onclick="prevImage()">&#10094;</span>
+			<span class="modal-arrow right" onclick="nextImage()">&#10095;</span>
+			<div class="modal-body">
+				<img class="modal-content" id="modalImage">
+				<div class="modal-text">
+					<div class="caption" id="modalTitle"></div>
+					<div class="modal-subtext" id="modalInfo"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		document.querySelectorAll(".AlbumArt").forEach(img => {
+			img.addEventListener("click", () => openModal(img));
+		});
+		function openModal(img) {
+			const modal = document.getElementById("imageModal");
+			const modalImg = document.getElementById("modalImage");
+			const modalText = document.querySelector(".modal-text");
+			const modalBg = document.querySelector(".modal-bg");
+			const close = document.querySelector(".close");
+
+			// Set content
+			modalImg.src = img.src;
+			document.getElementById("modalTitle").innerText = img.title || "";
+			document.getElementById("modalInfo").innerText = img.dataset.info || "";
+
+			// Play animations
+			playAnimation(modalImg, "zoomFadeIn");
+			playAnimation(modalText, "zoomFadeIn");
+			playAnimation(modalBg, "fadeIn");
+			playAnimation(close, "zoomFadeIn");
+
+			// Show modal container
+			modal.classList.add("show");
+		}
+		function closeModal() {
+			const modal = document.getElementById("imageModal");
+			modal.classList.remove("show"); // fade out
+		}
+		function playAnimation(el, animationName, duration = "0.5s") {
+			el.style.animation = "none";
+			void el.offsetWidth;
+			el.style.animation = `${animationName} ${duration} forwards`;
+		}
+		// LORD HAVE MERCY
+		let currentGrid = null;
+		let currentIndex = 0;
+		const grids = document.querySelectorAll(".CoverGrid");
+		document.querySelectorAll(".AlbumArt").forEach(img => {
+			img.addEventListener("click", () => openModal(img));
+		});
+		function openModal(img) {
+		const modal = document.getElementById("imageModal");
+		const modalImg = document.getElementById("modalImage");
+		const modalText = document.querySelector(".modal-text");
+		const modalBg = document.querySelector(".modal-bg");
+
+		// Determine which grid and index this image is in
+		grids.forEach(grid => {
+		  const imgs = Array.from(grid.querySelectorAll(".AlbumArt"));
+		  const index = imgs.indexOf(img);
+			if (index !== -1) {
+				currentGrid = imgs;
+				currentIndex = index;
+			}
+		});
+
+		// Set content
+		modalImg.src = currentGrid[currentIndex].src;
+		document.getElementById("modalTitle").innerText = currentGrid[currentIndex].title || "";
+		document.getElementById("modalInfo").innerText = currentGrid[currentIndex].dataset.info || "";
+
+		// Play animations (reuse your existing playAnimation function)
+		playAnimation(modalImg, "zoomFadeIn");
+		playAnimation(modalText, "zoomFadeIn");
+		playAnimation(modalBg, "fadeIn");
+
+		modal.classList.add("show");
+		}
+
+		// Arrow navigation
+		function prevImage() {
+			if (!currentGrid) return;
+			currentIndex = Math.max(0, currentIndex - 1); // stop at first
+			updateModalImage();
+		}
+		
+		function nextImage() {
+			if (!currentGrid) return;
+			currentIndex = Math.min(currentGrid.length - 1, currentIndex + 1); // stop at last
+			updateModalImage();
+		}
+
+		function updateModalImage() {
+			const modalImg = document.getElementById("modalImage");
+			const modalText = document.querySelector(".modal-text");
+
+			modalImg.src = currentGrid[currentIndex].src;
+			document.getElementById("modalTitle").innerText = currentGrid[currentIndex].title || "";
+			document.getElementById("modalInfo").innerText = currentGrid[currentIndex].dataset.info || "";
+
+			playAnimation(modalImg, "zoomFadeIn");
+			playAnimation(modalText, "zoomFadeIn");
+		}
+
+		// Keyboard support
+		document.addEventListener("keydown", e => {
+			if (!document.getElementById("imageModal").classList.contains("show")) return;
+			if (e.key === "ArrowLeft") prevImage();
+			if (e.key === "ArrowRight") nextImage();
+		});
+	</script>
+</html>
