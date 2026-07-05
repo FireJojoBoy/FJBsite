@@ -9,11 +9,14 @@
 	<link rel="stylesheet" href="css/styleEDM2.css">
 </head>
 <body>
-	<div id="EDM2wrapper">
-		<img src="img/EDM2/EDM2Logo_notext_siteready.svg" id="EDM2logo">
-		<div id="countdown">EDM 2</div>
+	<div id="landerwrapper">
+		<div id="EDM2wrapper">
+			<img src="img/EDM2/EDM2Logo_notext_siteready.svg" id="EDM2logo">
+			<div id="countdown">EDM 2</div>
+			<div id="countdown" style="font-size:2em;"></div>
+		</div>
+		<button id="preOrderBtn">Pre-Order CD!</button>
 	</div>
-	<div id="countdown" style="font-size:2em;"></div>
 </body>
 <script>
 	// Countdown date
@@ -21,11 +24,17 @@
 	var flashToggle = false;
 
 	var countdownEl = document.getElementById("countdown");
+	var PreOrdBtn = document.getElementById("preOrderBtn");
 
 	// Set up smooth fade for reverting only
 	document.body.style.transition = "background-color 0.5s ease";
 	countdownEl.style.transition = "color 0.5s ease";
-
+	
+	//check if EDM2 is out already
+	if (new Date().getTime() >= countDownDate) {
+		CountDownFinished();
+	}
+	
 	// Update every second
 	var x = setInterval(function(){
 
@@ -45,14 +54,14 @@
 	  flashToggle = !flashToggle;
 	  if(flashToggle){
 		document.body.style.transition = "none"; // transition b4 flash
-		document.body.style.backgroundColor = "rgba(255, 0, 0, 0.9)";
+		document.body.style.backgroundColor = "rgba(240, 240, 240, 0.9)";
 		countdownEl.style.transition = "none";
-		countdownEl.style.color = "rgba(100, 0, 255, 1)";
+		countdownEl.style.color = "rgba(200, 200, 200, 1)";
 	  }else{
 		document.body.style.transition = "none";
-		document.body.style.backgroundColor = "rgba(100, 0, 255, 0.9)";
+		document.body.style.backgroundColor = "rgba(240, 240, 255, 0.9)";
 		countdownEl.style.transition = "none";
-		countdownEl.style.color = "rgba(255, 0, 0, 1)";
+		countdownEl.style.color = "rgba(255, 150, 150, 1)";
 	  }
 
 	  // fade out back to normal
@@ -66,9 +75,14 @@
 	  // Countdown finished
 	  if (distance < 0) {
 		clearInterval(x);
-		countdownEl.innerHTML = "EDM 2";
-		document.body.style.backgroundColor = "";
-		countdownEl.style.color = "";
+		CountDownFinished();
 	  }
 	}, 1000);
+	
+	function CountDownFinished(){
+		countdownEl.innerHTML = "EDM 2";
+		PreOrdBtn.innerHTML = "Get the CD!";
+		document.body.style.backgroundColor = "";
+		countdownEl.style.color = "";
+	}
 </script>
