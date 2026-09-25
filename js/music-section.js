@@ -14,7 +14,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Respawnio.png',
+        cover: 'img/Music/Respawnio.avif',
         name: 'Respawnio Theme',
         description: 'Allthough this again just being music made for a game project of mine, this song was kickstarting my music journey (also kakty liked it and made a geometry dash level with it)',
         categories: ['singles', 'important'],
@@ -29,7 +29,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/The Early Stuff.jpg',
+        cover: 'img/Music/TheEarlyStuff.avif',
         name: 'The Early Stuff',
         description: 'This is a collection of some songs I was recording from 2018 to 2021, most of them being unreleased up to that point',
         categories: ['various'],
@@ -39,7 +39,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/LaterElevator.jpg',
+        cover: 'img/Music/LaterElevator.avif',
         name: 'Later Elevator',
         description: 'The 0th Album in my Discography. Basically me trying to be Neil Cicierega while learning producing. You gotta start somewhere!',
         categories: ['albums'],
@@ -50,7 +50,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Driven.jpg',
+        cover: 'img/Music/Driven.avif',
         name: 'Driven',
         description: 'I am embarrassed that this was my "distortion makes it sound like justice"-Phase, it really doesnt. That being said, I still love the strangely nostalgic vibe of this song to this day! It also samples Respawnio ^^ ',
         categories: ['singles'],
@@ -64,7 +64,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/SpaceCore.jpg',
+        cover: 'img/Music/SpaceCore.avif',
         name: 'Space Core',
         description: 'Pts. 1 - 3 were originally one track from a Later Elevator Sequel. I still wanted to release that back when I made the EP but now it stands on its own. Also back then, AI completion was cool and experimental >:(',
         categories: ['eps'],
@@ -75,7 +75,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/AstroBelt.jpg',
+        cover: 'img/Music/AstroBelt.avif',
         name: 'Astro Belt',
         description: 'My REAL debut Album and the first installment of what I now call the "Birth Trilogy". Short because it was originally supposed to be released as an EP but now it is part of an Album trilogy.',
         categories: ['albums', 'important'],
@@ -89,14 +89,14 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Sascha.jpg',
+        cover: 'img/Music/Sascha.avif',
         name: 'Sascha',
         description: '...we do NOT talk about Sascha',
         categories: ['singles'],
         releaseDate: '14.12.2022'
     },
     {
-        cover: 'img/Music/Safe.jpg',
+        cover: 'img/Music/Safe.avif',
         name: 'Safe',
         description: 'This Single version of Safe includes Driven and more importantly: Never Safe! The iconic icewings Remix that we later extended for our Album Step by Step',
         categories: ['singles'],
@@ -110,7 +110,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Runagun.jpg',
+        cover: 'img/Music/Runagun.avif',
         name: 'Lost Runagun OST',
         description: 'This was the Moment I realized Runagun would probably never release, so I uploaded my 2022 Soundtrack of the game.',
         categories: ['eps'],
@@ -124,7 +124,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/OLED.jpg',
+        cover: 'img/Music/OLED.avif',
         name: 'OLED',
         description: 'Second Album of the Birth Trilogy. This is probably my strongest 2022 work (it was still entirely recorded during 2022).',
         categories: ['albums', 'important'],
@@ -138,7 +138,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Terminate.jpg',
+        cover: 'img/Music/Terminate.avif',
         name: 'Terminate',
         description: 'The Abort Single, transitioning from OLED',
         categories: ['singles'],
@@ -151,7 +151,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Abort.jpg',
+        cover: 'img/Music/Abort.avif',
         name: 'Abort',
         description: 'The Finale of the Birth Trilogy. This one is kinda weird, I tried speading a message about something that does not really affect me. It still has its moments though.',
         categories: ['albums', 'important'],
@@ -165,7 +165,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Quirks.jpg',
+        cover: 'img/Music/Quirks.avif',
         name: 'Quirks Rule',
         description: 'Quirks Rule is a more industrial/experimental/trappy take on my music. A quirky release, if you will. Still worth checking out!',
         categories: ['eps', 'important'],
@@ -179,7 +179,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Laminar.jpg',
+        cover: 'img/Music/Laminar.avif',
         name: 'Laminar Flow',
         description: 'A 12 minute journey through some downtempo/chill ambient music. I always liked progressive/long tracks. One-track-EPs are great, this is my first attempt at that. Would recommend giving it a listen!',
         categories: ['eps', 'important'],
@@ -193,7 +193,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/GMTK23.jpg',
+        cover: 'img/Music/GMTK23.avif',
         name: 'YOU make a Game!',
         description: 'Soundtrack for my GMTK jam game 2023! The Bandcamp download includes shitty midi versions lol',
         categories: ['singles'],
@@ -207,7 +207,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/r12.jpg',
+        cover: 'img/Music/r12.avif',
         name: 'r12/maybe.flp',
         description: 'Two lowkey IDM-y songs that are pretty chill and laid back. I liked the Cover and wanted to make music sounding the way the Cover looks of that makes sense.',
         categories: ['singles'],
@@ -220,7 +220,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/RmxStuff.jpg',
+        cover: 'img/Music/RmxStuff.avif',
         name: 'I Remixed Some Stuff',
         description: '5 Remixes/Edits of some songs I like! This was definitely a fun release, especially since I rarely collaborate with others!',
         categories: ['eps', 'important'],
@@ -233,7 +233,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Step1.jpg',
+        cover: 'img/Music/Step1.avif',
         name: 'Just For now',
         description: 'First Step by Step Single, probably THE song off the Album. Also the first one we officially recorded.',
         categories: ['singles'],
@@ -245,7 +245,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Step2.jpg',
+        cover: 'img/Music/Step2.avif',
         name: 'Deep Fantasy NEO',
         description: 'Second Step by Step Single, we were kissing in the cover god damn!',
         categories: ['singles'],
@@ -257,7 +257,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Step3.jpg',
+        cover: 'img/Music/Step3.avif',
         name: 'SENSE ME',
         description: 'Third Step by Step Single, this TV WAS harmed during the making of this Cover.',
         categories: ['singles'],
@@ -269,7 +269,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/iMissKakty.jpg',
+        cover: 'img/Music/iMissKakty.avif',
         name: 'Step By Step',
         description: 'Vapor Album I made with Kakty (known as "Icewings" in music). I have so many great memories from this release and the music is really good in general.',
         categories: ['albums', 'important'],
@@ -283,7 +283,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Defo.jpg',
+        cover: 'img/Music/Defo.avif',
         name: 'Definitely',
         description: 'First Fist Pumping Single, I wanted it to sound a bit like hyperpop... yeah I know it does not sound like hyperpop.',
         categories: ['singles'],
@@ -295,7 +295,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Embers.jpg',
+        cover: 'img/Music/Embers.avif',
         name: 'Embers',
         description: 'Second Fist Pumping Single, probably the main single off of the Album.',
         categories: ['singles'],
@@ -308,7 +308,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/EmbersRmx.jpg',
+        cover: 'img/Music/EmbersRmx.avif',
         name: 'Embers (Remixes)',
         description: 'I asked some friends to remix my Fist Pumping Singles as B-Sides. Since they all chose Embers, I decided to make this Remix-EP!',
         categories: ['eps'],
@@ -321,7 +321,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/2020.jpg',
+        cover: 'img/Music/2020.avif',
         name: 'Summoning 2020',
         description: 'Third Fist Pumping Single, this one is actually re-using a demo I made back in 2020 when I had no idea what I was doing!',
         categories: ['singles'],
@@ -334,7 +334,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/FistPumping.jpg',
+        cover: 'img/Music/FistPumping.avif',
         name: 'A Fine Selection of Some Fist Pumping EDM',
         description: 'Named after a review a friend wrote for Abort, this Album is more casual and tries to focus on bangers.',
         categories: ['albums', 'important'],
@@ -348,7 +348,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Jump.jpg',
+        cover: 'img/Music/Jump.avif',
         name: 'Jump, Jump!',
         description: 'Collab song with SuperSoniker to celebrate the release of Jumpoline to the Google Playstore! This was a fun project!',
         categories: ['singles'],
@@ -361,7 +361,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Snacks.jpg',
+        cover: 'img/Music/Snacks.avif',
         name: 'Summer Snacks',
         description: 'Full-on Summer vibes! Fast Paced Future Funk/French House! One of my most fun releases! Cover Art made by Comerade Cat ^^',
         categories: ['eps', 'important'],
@@ -375,7 +375,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Thirst.jpg',
+        cover: 'img/Music/Thirst.avif',
         name: 'Thirst',
         description: 'Cliffhanger Single that released alongside a muisc video! On Youtube there is a hidden bonus track "Bad Dramer (flip)". Also this song samples the soundtrack of a yiff game lmao!',
         categories: ['singles'],
@@ -388,7 +388,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/hau5.jpg',
+        cover: 'img/Music/hau5.avif',
         name: 'Dead Hau5',
         description: 'So I got into Deadmau5 and wanted to try making something similar to his iconic hau5 music myself. Not sure if this is more of a parody EP lol.',
         categories: ['eps'],
@@ -399,7 +399,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Cliffhanger.jpg',
+        cover: 'img/Music/Cliffhanger.avif',
         name: 'Cliffhanger',
         description: 'I have a lot of things to say about this Album, will probably expand on it on my Artblog. To keep it short: This is mostly post-breakup-me trying to cope with my first breakup along with other broken relationships and mental stuff.',
         categories: ['albums', 'important'],
@@ -413,7 +413,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/rn.jpg',
+        cover: 'img/Music/rn.avif',
         name: 'Right Now...',
         description: 'Made in 2 hours in a music jam! Theme was "use your voice/vocals in some way". After cliffhanger, I felt confident to sing! Bauhausdog hit me up to remix it, so I decided to release it as a single with the remix as a B-Side ^^',
         categories: ['singles'],
@@ -427,7 +427,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Digitalized.jpg',
+        cover: 'img/Music/Digitalized.avif',
         name: 'Digitalized',
         description: 'kÎtsune asked in the Creux la Nuit discord if someone wanted to collab with them on a demo he sent while also making a completely different outro. I love the track "The Urge" by Gesaffelstein so I was instantly in haha!',
         categories: ['singles'],
@@ -440,7 +440,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Jork.jpg',
+        cover: 'img/Music/Jork.avif',
         name: 'Jork',
         description: 'I am very proud of Jork, influenced by French Electro of course but after I sent it to Rain The Prince, he sent me an mp3 and was like "Fuck you, THIS is real french electro" and this is how the B-Side was born! Also dropped this on January7th again, this might become a tradition now lolsu',
         categories: ['singles'],
@@ -453,7 +453,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/RAFTWARS2.jpg',
+        cover: 'img/Music/RAFTWARS2.avif',
         name: 'RAFT WARS 2',
         description: 'I just felt like making this, it was so fun doing it!',
         categories: ['singles'],
@@ -466,7 +466,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/thisthingon.jpg',
+        cover: 'img/Music/thisthingon.avif',
         name: 'Is This Thing On?',
         description: 'My valentines day 2025 Album. Originally this was just supposed to be a small EP but things got out of hand. Not really a main-project, a bit on the experimental side.',
         categories: ['albums'],
@@ -480,7 +480,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Snacks2.jpg',
+        cover: 'img/Music/Snacks2.avif',
         name: 'Summer Snacks II',
         description: 'Summer Snacks was a fun project, so for summer 2025, I wanted to make another one! Now we have twice as many Summer Snacks jams to dance out to!',
         categories: ['eps', 'important'],
@@ -494,7 +494,7 @@ const releases = [
         }
     },
 	{
-        cover: 'img/Music/Twinty.jpg',
+        cover: 'img/Music/Twinty.avif',
         name: 'Twinty',
         description: 'I turned 20 when this released! This is a song about coming to terms with that! Made this during my night in the woods phase!',
         categories: ['singles'],
@@ -507,7 +507,7 @@ const releases = [
         }
     },
 	{
-        cover: 'img/Music/Hollowverse.jpg',
+        cover: 'img/Music/Hollowverse.avif',
         name: 'Hollowverse',
         description: 'Finally made a collab with Hollowire! This single ended up as the title track in his 2025 Album!',
         categories: ['singles'],
@@ -519,7 +519,7 @@ const releases = [
         }
     },
 	{
-        cover: 'img/Music/Live2025.jpg',
+        cover: 'img/Music/Live2025.avif',
         name: 'FireJojoBoys EDM - Live in Wörth 2025',
         description: 'I had my first FJB live show in September of 2025 and made a Live Album from it! Very inspired by Daft Punks and Justices live albums! Every song here is touched up and remixed!',
         categories: ['albums', 'important'],
@@ -533,7 +533,7 @@ const releases = [
         }
     },
     {
-        cover: 'img/Music/Era.jpg',
+        cover: 'img/Music/Era.avif',
         name: '& Of an Era',
         description: 'Well as the cover label says, the demos for these tracks were made between 2023 and 2024 and I polished them in 2025 to turn them into this rad EP!',
         categories: ['eps', 'important'],
@@ -545,6 +545,34 @@ const releases = [
 			bandcamp: 'https://firejojoboy.bandcamp.com/album/of-an-era',
             soundcloud: 'https://soundcloud.com/firejojoboy/sets/of-an-era-1',
         }
+    },
+    {
+        cover: 'img/Music/Snacks3.avif',
+        name: 'Summer Snacks III',
+        description: 'Summer Snacks III released a bit later for summer 2026! The awesome cover artist gascarpades had burnout which gave me time for more polishing!',
+        categories: ['eps', 'important'],
+        releaseDate: '03.07.2025',
+        streamingLinks: {
+            spotify: 'https://open.spotify.com/album/1AqeY8KaGjAC4AyAyVPwNo?si=OwO5kwOhR4eNCvpQXWJYtQ',
+            appleMusic: 'https://music.apple.com/de/album/summer-snacks-iii-ep/6783022034',
+            youtube: 'https://youtube.com/playlist?list=OLAK5uy_m41rii2bhoL38kNq1hCHv4Bd7IRESyGc0&si=KKMHS8m493rVrcD5',
+			bandcamp: 'https://firejojoboy.bandcamp.com/album/summer-snacks-iii',
+            soundcloud: 'https://soundcloud.com/firejojoboy/sets/summer-snacks-iii',
+        }
+    },
+    {
+        cover: 'img/Music/edm2.avif',
+        name: 'EDM 2',
+        description: 'I invented music ur welcome',
+        categories: ['albums', 'important'],
+        releaseDate: '?.?.2026',
+        streamingLinks: {
+            spotify: '',
+            appleMusic: '',
+            youtube: '',
+			bandcamp: '',
+            soundcloud: '',
+        }
     }
 ];
 function createReleaseItem(release) {
@@ -554,9 +582,9 @@ function createReleaseItem(release) {
         <div class="release-item ${release.categories.join(' ')}">
             <img src="${release.cover}" alt="${release.name}" class="cover" onerror="this.src='img/Music/PlaceholderCover.png';">
             <div class="release-info">
+				<p class="release-date">${release.releaseDate}</p>
                 <h3 class="release-name">${release.name}</h3>
                 <p class="release-description">${release.description}</p>
-                <p class="release-date">${release.releaseDate}</p>
                 <button class="listen-button" 
                         ${hasLinks ? `onclick="showPopup('${release.name}')"` : `disabled`} 
                         style="background-image: url(img/Music/links/${hasLinks ? 'listenbtnB.png' : 'listenbtnG.png'});">
@@ -576,12 +604,12 @@ function showPopup(releaseName) {
     document.getElementById('popupCover').src = release.cover; // Set the cover image
     
     const serviceImages = {
-        spotify: 'img/Music/links/spotify.png',
-        appleMusic: 'img/Music/links/apple_music.png',
-        youtube: 'img/Music/links/yt.png',
-        bandcamp: 'img/Music/links/bndcmp.png',
-        soundcloud: 'img/Music/links/soundcloud.png',
-        newgrounds: 'img/Music/links/NG.png'
+        spotify: 'img/Music/links/template.avif',
+        appleMusic: 'img/Music/links/apple_music.avif',
+        youtube: 'img/Music/links/yt.avif',
+        bandcamp: 'img/Music/links/bndcmp.avif',
+        soundcloud: 'img/Music/links/soundcloud.avif',
+        newgrounds: 'img/Music/links/NG.avif'
     };
 
     const popupContent = Object.entries(release.streamingLinks)

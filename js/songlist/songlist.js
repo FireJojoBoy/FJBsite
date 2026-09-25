@@ -3,6 +3,19 @@
 // =====================
 const releases = [
   {
+    title: "Summer Snacks III",
+    type: "EP",
+    releaseDate: "03.07.2026",
+    important: true,
+    songs: [
+      { track: 1, title: "To the Beach", bpm: [137], key: "F minor" },
+      { track: 2, title: "Stopptanz", bpm: [146], key: "F# minor" },
+      { track: 3, title: "Da Breakz", bpm: [162], key: "G# minor" },
+      { track: 4, title: "TWILIGHT", bpm: [144], key: "F# minor" },
+	  { track: 5, title: "Sweet & Fruity", bpm: [124], key: "A minor" }
+    ]
+  },
+  {
     title: "& Of an Era",
     type: "EP",
     releaseDate: "31.12.2025",

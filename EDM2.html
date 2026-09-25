@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
 	<title>EDM 2 - FireJojoBoy</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="THE EDM 2 PROJECT">
+	<meta property="og:image" content="https://firejojoboy.gay/EDM2/img/Spash.avif">
 	<meta name="keywords" content="FireJojoBoy, Album, EDM2">
 	<meta name="author" content="FireJojoBoy">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/styleEDM2.css">
 	<link rel="icon" type="image/png" href="img/EDM2/edm2_web_icon.png"/>
+	<!-- PRELOAD -->
+	<link rel="preload" as="image" href="img/EDM2/ShippingInfo.gif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productCD_1.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productCD_2.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productCD_3.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productCD_mobile.avif" media="(max-width: 1320px)">
+	<link rel="preload" as="image" href="img/EDM2/productStickers_1.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productStickers_2.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productStickers_3.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productStickers_4.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productStickers_5.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productStickers_mobile.avif" media="(max-width: 1320px)">
+	<link rel="preload" as="image" href="img/EDM2/productBundle_1.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productBundle_2.avif" media="(min-width: 1321px)>
+	<link rel="preload" as="image" href="img/EDM2/productBundle_mobile.avif" media="(max-width: 1320px)">
 </head>
 <body>
 	<div id="landerwrapper">
@@ -16,6 +33,58 @@
 			<div id="countdown">EDM 2</div>
 			<div id="countdown" style="font-size:2em;"></div>
 		</div>
+		<button id="preOrderBtn" class="landBtn">Pre-Order CD!</button>
+	</div>
+	<div id="shopPanel">
+		<div class="shopitem">
+			<h3>2-CD Album</h3>
+			<picture class="productPic">
+				<source media="(max-width: 1320px)" srcset="img/EDM2/productCD_mobile.avif">
+				<img src="img/EDM2/productCD_1.avif">
+				<img src="img/EDM2/productCD_2.avif">
+				<img src="img/EDM2/productCD_3.avif">
+				<img src="img/EDM2/productCD_4.avif">
+			</picture>
+			<ul class="productList">
+				<li>Price: 18€</li>
+				<li>2-CD Album in a gatefold case</li>
+				<!-- <li>2 holographic Stickers</li> -->
+			</ul>
+			<a class="BuyBtn" href="https://buy.stripe.com/00w00keup9vig4o4ZXcjS00" target="_blank">Buy CD</a>
+		</div>
+		<div class="shopitem">
+			<h3>10 Stickers</h3>
+			<picture class="productPic">
+				<source media="(max-width: 1320px)" srcset="img/EDM2/productStickers_mobile.avif">
+				<img src="img/EDM2/productStickers_1.avif">
+				<img src="img/EDM2/productStickers_2.avif">
+				<img src="img/EDM2/productStickers_3.avif">
+				<img src="img/EDM2/productStickers_4.avif">
+				<img src="img/EDM2/productStickers_5.avif">
+			</picture>
+			<ul class="productList">
+				<li>Price: 4€</li>
+				<li>10 holographic Stickers</li>
+				<li>Width 5cm, height 4,3cm</li>
+			</ul>
+			<a class="BuyBtn" href="https://buy.stripe.com/28E14o3PLdLy2dydwtcjS02" target="_blank">Buy Stickers</a>
+		</div>
+		<div class="shopitem">
+			<h3>2-CD Album <span class="mobileBreak"><br></span>+ 10 Stickers</h3>
+			<picture class="productPic">
+				<source media="(max-width: 1320px)" srcset="img/EDM2/productBundle_mobile.avif">
+				<img src="img/EDM2/productBundle_1.avif">
+				<img src="img/EDM2/productBundle_2.avif">
+			</picture>
+			<ul class="productList">
+				<li>Price: 20€</li>
+				<li>2-CD Album in a gatefold case</li>
+				<li>10 holographic Stickers</li>
+				<li>Save 2€</li>
+			</ul>
+			<a class="BuyBtn" href="https://buy.stripe.com/6oUfZi0Dz9vibO81NLcjS01" target="_blank">Buy Bundle</a>
+		</div>
+		<img id="shippingInfo" src="img/EDM2/ShippingInfo.gif">
 	</div>
 </body>
 <script src="js/EDM2/EDM2-countdown.js" type="text/javascript"></script>
