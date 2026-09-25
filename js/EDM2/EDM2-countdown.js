@@ -1,4 +1,4 @@
-alert("countdown JS loaded");
+console.log("EDM2 countdown script loaded");
 
 // Countdown date
 var countDownDate = new Date("Oct 24, 2026 00:00:02").getTime();

@@ -1,4 +1,4 @@
-alert("functionality JS loaded");
+console.log("EDM2 functionality script loaded");
 
 const shopBtn = document.getElementById("preOrderBtn");
 const menu = document.getElementById("shopPanel");
