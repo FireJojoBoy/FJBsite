@@ -4,8 +4,10 @@ const shopBtn = document.getElementById("preOrderBtn");
 const menu = document.getElementById("shopPanel");
 
 shopBtn.addEventListener("click", function () {
+    console.log("BUTTON CLICKED");
     menu.style.display = "grid";
 });
+
 
 /* img fading */
 
