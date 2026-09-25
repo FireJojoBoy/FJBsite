@@ -1,3 +1,5 @@
+alert("countdown JS loaded");
+
 // Countdown date
 var countDownDate = new Date("Oct 24, 2026 00:00:02").getTime();
 var flashToggle = false;

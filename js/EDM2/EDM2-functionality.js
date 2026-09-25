@@ -1,3 +1,5 @@
+alert("functionality JS loaded");
+
 const shopBtn = document.getElementById("preOrderBtn");
 const menu = document.getElementById("shopPanel");
 
